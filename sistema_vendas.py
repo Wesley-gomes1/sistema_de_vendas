@@ -90,25 +90,25 @@ while True:
             carrinho.clear()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     elif opcao == 0:
         print("Saindo do sistema...")
         break
 
     else:
             print("Opção inválida")
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
