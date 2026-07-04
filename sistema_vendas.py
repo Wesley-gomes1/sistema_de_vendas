@@ -42,7 +42,7 @@ while True:
                     "Preço" : estoque_produtos [id_produto] ["Preço"],
                     "Preço_total" : qtd_produto * estoque_produtos [id_produto] ["Preço"]
                 }
-                carrinho.append(estoque_produtos[id_produto])
+                carrinho.append(item)
                 estoque_produtos [id_produto]["Quantidade"] -= qtd_produto
 
                 print(item)
@@ -57,9 +57,9 @@ while True:
             print("Visualizando carrinho.")
 
             for i in carrinho:
-                print(f"{i["Qtd"]} X {i["Nome"]} no valor de R$ {i["Preço"]}(cada) \n Total R${i["preço_total"]}")
+                print(f"{i["Qtd"]} X {i["Nome"]} no valor de R$ {i["Preço"]}(cada) \n Total R${i["Preço_total"]}")
                 if subtotal !=  i ["Preço_total"]:
-                 subtotal += i ["preço_total"]
+                 subtotal += i ["Preço_total"]
             print(f"Subtotal da Compra R${subtotal}")
         else:
             print("Carrinho Vazio!")
